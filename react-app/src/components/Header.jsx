@@ -1,38 +1,44 @@
 import logo from "../covercrop.jpg";
 import "../App.css";
+import { Link } from "react-router-dom";
 
-const Header = () => {
+import { Navbar, Nav } from "react-bootstrap";
+
+function Header() {
   return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://github.com/stevelab1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={logo} className="App-logo-small" alt="logo" />
-        </a>
-        <p>
-          <code>
-            Frontend Developer specializing in
-            <br />
-            fast web applications and
-            <br />
-            integrating APIs
-          </code>
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/stevelab1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <code>stevelab1</code>
-        </a>
-      </header>
-    </div>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/" className="App-link">
+              <code>Home</code>
+            </Link>{" "}
+          </li>{" "}
+          <li>
+            <Link to="/projects" className="App-link">
+              <code>Projects</code>
+            </Link>{" "}
+          </li>
+          <li>
+            <Link to="/contact" className="App-link">
+              <code>Contact</code>
+            </Link>{" "}
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
-};
+}
 
 export default Header;
+
+{
+  /* <a
+className="App-link"
+href="https://github.com/stevelab1"
+target="_blank"
+rel="noopener noreferrer"
+>
+<img src={logo} className="App-logo-small" alt="logo" />
+</a> */
+}

@@ -4,14 +4,6 @@ import "../App.css";
 const Home = () => {
   return (
     <div className="App-home">
-      <a
-        className="App-link"
-        href="https://github.com/stevelab1"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src={logo} className="App-logo" alt="logo" />
-      </a>
       <p>
         <code>
           Frontend Developer specializing in
@@ -27,7 +19,12 @@ const Home = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <code>stevelab1</code>
+        <p>
+          <code>stevelab1</code>
+        </p>
+        <p>
+          <img src={logo} className="App-logo-small" alt="logo" />
+        </p>{" "}
       </a>
     </div>
   );

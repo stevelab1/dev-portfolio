@@ -51,6 +51,12 @@ nav, li, ul {
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+}
+
+.App-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
 }
 
 @keyframes App-logo-spin {
