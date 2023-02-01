@@ -1,5 +1,9 @@
 .App {
   background-color: #282c34;
+  /* override bootstrap */
+  --bs-code-color: #f1f0f0;
+  --bs-link-hover-color: transparent;
+  /* --bs-nav-link-visited-color: red; */
 }
 
 nav, li, ul {
@@ -11,6 +15,10 @@ nav, li, ul {
   font-size: calc(10px + 2vmin);
 }
 
+.transparent {
+  color: transparent;
+}
+
 .App-logo {
   height: 50vmin, ;
   width: 50vmin;
@@ -18,8 +26,8 @@ nav, li, ul {
 }
 
 .App-logo-small {
-  height: 5vmin, ;
-  width: 5vmin;
+  height: 50px, ;
+  width: 50px;
   pointer-events: none;
 }
 
@@ -39,7 +47,7 @@ nav, li, ul {
 }
 
 .App-home {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -57,6 +65,14 @@ nav, li, ul {
 .App-link:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
+}
+
+.nav-link:hover {
+  color: #61dafb;
+}
+
+.nav-link:focus {
+  color: var(--bs-code-color);
 }
 
 @keyframes App-logo-spin {

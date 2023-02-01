@@ -1,3 +1,6 @@
+import React from "react";
+
+// import logo from "../logo.svg";
 import logo from "../covercrop.jpg";
 import "../App.css";
 
@@ -5,17 +8,33 @@ const Contact = () => {
   return (
     <div className="App-home">
       <p>
-        <code>CONTACTS</code>
+        <code>
+          <span className="transparent">
+            Frontend Developer specializing in
+          </span>
+          <br />
+          CONTACTS
+          <br />
+          <span className="transparent">interfaces to APIs</span>
+        </code>
       </p>
       <a
-        className="App-link"
+        className='App-link'
         href="https://github.com/stevelab1"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <p><code>stevelab1</code></p>
         <p>
-          <img src={logo} className="App-logo-small" alt="logo" />
+          <code className='App-link'>stevelab1</code>
+        </p>
+        {/* <br /> */}
+        <p>
+          <img
+            style={{ borderRadius: "50%" }}
+            src={logo}
+            className="App-logo-small"
+            alt="logo"
+          />
         </p>
       </a>
     </div>

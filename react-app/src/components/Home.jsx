@@ -1,30 +1,54 @@
-import logo from "../covercrop.jpg";
+import React from 'react';
+
 import "../App.css";
+import logo from "../covercrop.jpg";
+
 
 const Home = () => {
   return (
     <div className="App-home">
       <p>
         <code>
-          Frontend Developer specializing in
+          Frontend Developer focusing on
           <br />
           fast web applications and
           <br />
-          integrating APIs
+          interfaces to APIs
         </code>
+
+        {/* <code>
+          Developer focusing on fast
+          <br />
+          web and mobile apps +
+          <br />
+          API integration
+        </code> */}
+
+         {/* <code>
+          Fast web and mobile apps
+          <br />
+          API integration
+        </code> */}
+
       </p>
       <a
-        className="App-link"
+        className='App-link'
         href="https://github.com/stevelab1"
         target="_blank"
         rel="noopener noreferrer"
       >
         <p>
-          <code>stevelab1</code>
+          <code className='App-link'>stevelab1</code>
         </p>
+        {/* <br /> */}
         <p>
-          <img src={logo} className="App-logo-small" alt="logo" />
-        </p>{" "}
+          <img
+            style={{ borderRadius: "50%" }}
+            src={logo}
+            className="App-logo-small"
+            alt="logo"
+          />
+        </p>
       </a>
     </div>
   );
