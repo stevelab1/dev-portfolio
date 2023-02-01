@@ -1,37 +1,40 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+// import { useParams } from 'react-router-dom';
+import { Card } from "react-bootstrap";
 
 import "../App.css";
 
-// import projectData from './projectData.json';
-// import Project from './Project.js';
+import projectData from "../data/projectData.json";
+import Project from "./Project.js";
 // import ProjectNav from './ProjectNav.js';
 
 const Projects = () => {
+  const [projects, setProjects] = useState([]);
+  // const { projectId } = useParams();
 
-const [projects, setProjects] = useState([]);
-const { projectId } = useParams();
-  
-useEffect(() => {
-  setProjects(projectData);
-}, []);
+  useEffect(() => {
+    setProjects(projectData);
+  }, []);
 
   return (
     <main>
-    <h1>Projects</h1>
-    <CardDeck className="blue-card-deck">
+      <h1>Projects</h1>
+      <ul>
         {projects.map((project) => (
-            <Project 
-                key={project.id}
-                title={project.title}
-                deployedLink={project.deployedLink}
-                githubLink={project.githubLink}
-                screenshot={project.screenshot} 
+          <li key={project.id}>
+            <h2>{project.title}</h2>
+            <a href={project.deployedLink}>View Deployed</a>
+            <a href={project.githubLink}>View on GitHub</a>
+            <img
+              src={project.screenshot}
+              alt={`Screenshot of ${project.title}`}
             />
+          </li>
         ))}
-    </CardDeck>
-    <ProjectNav projects={projects} projectId={projectId} />
-</main>
+      </ul>
+
+      {/* <ProjectNav projects={projects} projectId={projectId} /> */}
+    </main>
   );
 };
 
