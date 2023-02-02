@@ -5,11 +5,13 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 import "../App.css";
-import logo from "../covercrop.jpg";
+// import logo from "../covercrop.jpg";
 
 function Header() {
   return (
-    <Navbar bg="transparent" expand="lg" variant="dark">
+    <Navbar bg="black" expand="lg" variant="dark" sticky="top" 
+    // style={{ backgroundColor: "#black" }}
+    >
       <Container fluid>
         <Navbar.Brand>
           <a
@@ -17,14 +19,14 @@ function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            {/* <span className="App-link">stevelab1@dev-portfolio</span> */}
+            
+            {/* <img
               style={{ borderRadius: "50%" }}
-              // width={100}
-              // height={100}
               src={logo}
               className="App-logo-small"
               alt="logo"
-            />
+            /> */}
           </a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -32,7 +34,7 @@ function Header() {
           <Nav className="justify-content-center">
             <Nav.Item>
               <Nav.Link as={Link} to="/" className="App-link">
-                Home
+              $ Home
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -42,7 +44,7 @@ function Header() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link as={Link} to="/contact" className="App-link">
-                Contact
+                Contact   <span className="cursor">_</span>
               </Nav.Link>
             </Nav.Item>
           </Nav>

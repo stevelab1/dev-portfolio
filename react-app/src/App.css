@@ -1,9 +1,23 @@
 .App {
-  background-color: #282c34;
+  background-color: black;
+  position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
   /* override bootstrap */
   --bs-code-color: #f1f0f0;
-  --bs-link-hover-color: transparent;
-  /* --bs-nav-link-visited-color: red; */
+  --bs-link-hover-color: #f1f0f0;
+  --bs-link-color: #61dafb;
+  --bs-nav-link-hover-color: #fff;
+  --bs-navbar-hover-color: #fff;
+  --bs-nav-link-active-color: #fff;
+  --bs-navbar-active-color: #fff;
+
+}
+
+a {
+  text-decoration: none;
 }
 
 nav, li, ul {
@@ -37,29 +51,21 @@ nav, li, ul {
   }
 }
 
-.App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  font-size: calc(1px + 2vmin);
-  color: white;
-}
-
 .App-home {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  align-items: center;
   justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #31cf25;
   text-decoration: none;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  font-size: calc(16px + 1vmin);
 }
 
 .App-link:hover {
@@ -67,13 +73,12 @@ nav, li, ul {
   text-underline-offset: 1rem;
 }
 
+/* override bootstrap */
 .nav-link:hover {
-  color: #61dafb;
+  color: #31cf25;
 }
 
-.nav-link:focus {
-  color: var(--bs-code-color);
-}
+/* animations: */
 
 @keyframes App-logo-spin {
   from {
@@ -101,4 +106,20 @@ nav, li, ul {
 .fade-exit-active {
   opacity: 0;
   transition: opacity 300ms;
+}
+
+.cursor {
+  font-weight: 700;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: var(--text-color);
+  }
 }
