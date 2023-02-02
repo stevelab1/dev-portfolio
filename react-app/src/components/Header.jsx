@@ -10,7 +10,7 @@ import logo from "../covercrop.jpg";
 function Header() {
   return (
     <Navbar bg="transparent" expand="lg" variant="dark">
-      <Container>
+      <Container fluid>
         <Navbar.Brand>
           <a
             href="https://github.com/stevelab1"

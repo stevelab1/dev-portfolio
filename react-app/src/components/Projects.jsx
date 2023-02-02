@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 // import { useParams } from 'react-router-dom';
-import { Card } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 import "../App.css";
 
@@ -18,21 +18,20 @@ const Projects = () => {
 
   return (
     <main>
-      <h1>Projects</h1>
-      <ul>
+      {/* <h1>Projects</h1> */}
+      <Row xs={1} lg={2} xxl={3} className="g-4 p-4">
         {projects.map((project) => (
-          <li key={project.id}>
-            <h2>{project.title}</h2>
-            <a href={project.deployedLink}>View Deployed</a>
-            <a href={project.githubLink}>View on GitHub</a>
-            <img
-              src={project.screenshot}
-              alt={`Screenshot of ${project.title}`}
+          <Col>
+            <Project
+              key={project.id}
+              title={project.title}
+              deployedLink={project.deployedLink}
+              githubLink={project.githubLink}
+              screenshot={project.screenshot}
             />
-          </li>
+          </Col>
         ))}
-      </ul>
-
+      </Row>
       {/* <ProjectNav projects={projects} projectId={projectId} /> */}
     </main>
   );
