@@ -53,21 +53,27 @@ const Home = () => {
             <ListGroup className="list-group-flush bg-dark">
               <ListGroup.Item 
               className="bg-black text-white border-bottom border-top"
-              >Cras justo odio</ListGroup.Item>
+              >HTML, CSS, Javascript</ListGroup.Item>
               <ListGroup.Item 
               className="bg-black text-white border-bottom"
-              >Dapibus ac facilisis in</ListGroup.Item>
+              >React, Next, Astro</ListGroup.Item>
               <ListGroup.Item 
               className="bg-black text-white border-bottom"
-              >Vestibulum at eros</ListGroup.Item>
+              >Tailwind, Bootstrap</ListGroup.Item>
+              <ListGroup.Item 
+              className="bg-black text-white border-bottom"
+              >API Integrations, AI Workflows</ListGroup.Item>
+              <ListGroup.Item 
+              className="bg-black text-white border-bottom"
+              >Python, Django REST Framework</ListGroup.Item>
             </ListGroup>
             <Card.Body>
               <Card.Link href="#">Card Link</Card.Link>
               <Card.Link href="#">Another Link</Card.Link>
             </Card.Body>
             <Card.Body>
-            <Button variant="primary" onClick={handleShow}>
-        Launch
+            <Button variant="outline-light" onClick={handleShow}>
+        About me
       </Button>
 
       <Offcanvas show={show} onHide={handleClose} placement="end" className="bg-success">
