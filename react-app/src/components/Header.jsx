@@ -9,7 +9,7 @@ import "../App.css";
 
 function Header() {
   return (
-    <Navbar bg="black" expand="lg" variant="dark" sticky="top" 
+    <Navbar bg="black" expand="lg" variant="dark" sticky="top" className="pb-2"
     // style={{ backgroundColor: "#black" }}
     >
       <Container fluid>
@@ -18,6 +18,7 @@ function Header() {
             href="https://github.com/stevelab1"
             target="_blank"
             rel="noopener noreferrer"
+            alt="link to stevelab1 github profile"
           >
             {/* <span className="App-link">stevelab1@dev-portfolio</span> */}
             
@@ -33,17 +34,23 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="justify-content-center">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" className="App-link">
+              <Nav.Link as={Link} to="/" 
+              className="App-link"
+              >
               $ Home
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/projects" className="App-link">
+              <Nav.Link as={Link} to="/projects" 
+              className="App-link"
+              >
                 Projects
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/contact" className="App-link">
+              <Nav.Link as={Link} to="/contact" 
+              className="App-link"
+              >
                 Contact   <span className="cursor">_</span>
               </Nav.Link>
             </Nav.Item>

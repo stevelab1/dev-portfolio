@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-// import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Col, Row } from "react-bootstrap";
 
 import "../App.css";
 
 import projectData from "../data/projectData.json";
 import Project from "../components/Project.js";
-// import ProjectNav from './ProjectNav.js';
+import ProjectNav from '../components/ProjectNav.js';
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
-  // const { projectId } = useParams();
+  const { projectId } = useParams();
 
   useEffect(() => {
     setProjects(projectData);
@@ -19,6 +19,8 @@ const Projects = () => {
   return (
     <main>
       {/* <h1>Projects</h1> */}
+      <ProjectNav projects={projects} projectId={projectId} className="sticky-nav"/>
+
       <Row xs={1} lg={2} xxl={3} className="g-4 p-4">
         {projects.map((project) => (
           <Col>
@@ -32,7 +34,7 @@ const Projects = () => {
           </Col>
         ))}
       </Row>
-      {/* <ProjectNav projects={projects} projectId={projectId} /> */}
+
     </main>
   );
 };
