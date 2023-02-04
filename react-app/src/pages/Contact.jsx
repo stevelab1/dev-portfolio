@@ -1,42 +1,43 @@
 import React from "react";
-
-// import logo from "../logo.svg";
-import logo from "../covercrop.jpg";
-import "../App.css";
+import { Form, Button } from "react-bootstrap";
 
 const Contact = () => {
   return (
-    <div className="App-home">
-      <p>
-        <code>
-          <span className="transparent">
-            Frontend Developer specializing in
-          </span>
-          <br />
-          CONTACTS
-          <br />
-          <span className="transparent">interfaces to APIs</span>
-        </code>
-      </p>
-      <a
-        className='App-link'
-        href="https://github.com/stevelab1"
-        target="_blank"
-        rel="noopener noreferrer"
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <Form
+        // style={{  }}
+        className="text-white p-4"
+        name="contact"
+        method="POST"
+        data-netlify="true"
       >
+        <Form.Group>
+          <Form.Label>Your Name:</Form.Label>
+          <p>
+            {" "}
+            <Form.Control type="text" name="name" />{" "}
+          </p>
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Your Email:</Form.Label>
+          <p>
+            <Form.Control type="email" name="email" />
+          </p>
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Message:</Form.Label>
+          <p>
+            {" "}
+            <Form.Control as="textarea" name="message" />
+          </p>
+        </Form.Group>
         <p>
-          <code className='App-link'>stevelab1</code>
+          {" "}
+          <Button variant="primary" type="submit">
+            Send
+          </Button>
         </p>
-        {/* <br /> */}
-        {/* <p>
-          <img
-            style={{ borderRadius: "50%" }}
-            src={logo}
-            className="App-logo-small"
-            alt="logo"
-          />
-        </p> */}
-      </a>
+      </Form>
     </div>
   );
 };
