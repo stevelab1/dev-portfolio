@@ -3,6 +3,10 @@ import React, { useState, useEffect } from "react";
 import projectData from "../data/projectData.json";
 import Project from "../components/Project.js";
 import ProjectNav from "../components/ProjectNav.js";
+
+//routing
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import {
   useParams,
   Link,
@@ -28,7 +32,7 @@ const Projects = () => {
     <main>
       <Switch>
         <Route exact path={match.path}>
-          <Row xs={1} lg={2} xxl={3} className="g-4 p-4">
+          <Row xs={1} lg={2} xxl={3} className="">
             {projects.map((project) => (
               <Col>
                 <Link to={`${match.url}/${project.id}`}>
