@@ -38,7 +38,7 @@ const Home = () => {
                   style={{ textDecoration: "none", fontWeight: "bold" }}
                   className="App-link"
                 >
-                  stevelab1/dev-portfolio
+                  Steve T Lab's Dev Portfolio
                 </code>{" "}
               </Card.Title>
               <Card.Text>
@@ -84,6 +84,14 @@ const Home = () => {
                 alt="link to dev-portfolio github repo"
               >
                 /dev-portfolio
+              </Card.Link>
+              <Card.Link
+                href="https://drive.google.com/file/d/1bAdukk8IEQFtxEf2B9W-8SoTe-kixhlz/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="link to CV"
+              >
+                /CV
               </Card.Link>
             </Card.Body>
             <Card.Body>

@@ -5,10 +5,7 @@ import Project from "../components/Project.js";
 import ProjectNav from "../components/ProjectNav.js";
 
 //routing
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
 import {
-  useParams,
   Link,
   useRouteMatch,
   Switch,
@@ -17,6 +14,7 @@ import {
 import { Col, Row } from "react-bootstrap";
 
 import "../App.css";
+import ProjectDetail from "../components/ProjectDetail";
 
 
 const Projects = () => {
@@ -51,7 +49,7 @@ const Projects = () => {
         <Route path={`${match.path}/:projectId`}>
           {projects.map((project) => (
             <Route key={project.id} path={`${match.path}/${project.id}`}>
-              <Project
+              <ProjectDetail
                 title={project.title}
                 deployedLink={project.deployedLink}
                 githubLink={project.githubLink}

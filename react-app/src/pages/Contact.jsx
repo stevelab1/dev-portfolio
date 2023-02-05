@@ -41,7 +41,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/stephen-t-823341193"
             target="_blank"
             rel="noopener noreferrer"
-            alt="link to stevelab1 LinkedIn profile"
+            alt="link to LinkedIn"
           >
             LinkedIn
           </a>
