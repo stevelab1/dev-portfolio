@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+# temporarily
+covercrop.jpg
+logo.svg
+
 # testing
 /coverage
 Test.jsx
@@ -15,6 +19,7 @@ ref.md
 
 # misc
 .DS_Store
+../.DS_Store
 .env.local
 .env.development.local
 .env.test.local
