@@ -19,7 +19,7 @@ https://stevelab1.github.io/dev-portfolio
 
 ## Screenshot
 
-![Screenshot of portfolio](src/images/screenshot.png)
+![Screenshot of portfolio](react-app/src/images/screenshot.png)
 
 ## Reporting issues
 
