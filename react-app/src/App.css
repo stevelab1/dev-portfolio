@@ -31,6 +31,13 @@ main {
   height: 100vh;
 }
 
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .App-link {
   color: #31cf25;
   text-decoration: none;
@@ -137,6 +144,18 @@ main {
 
 active {
   color: white;
+}
+
+@media screen and (min-width: 351px) {
+  .skills {
+    min-width: 350px;
+  }
+}
+
+@media screen and (max-width: 351px) {
+  main {
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 992px) {

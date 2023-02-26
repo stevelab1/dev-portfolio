@@ -11,7 +11,7 @@ const Home = () => {
   const handleShow = () => setShow(true);
 
   return (
-    <main>
+    <main className="Home">
       <Row xs={1} sm={2} lg={3} className="g-4 p-4">
         <Col className="pt-4" style={{ width: "12rem", textAlign: "left" }}>
           <Card className="bg-black avatar border">
@@ -29,7 +29,7 @@ const Home = () => {
           </Card>
         </Col>
 
-        <Col>
+        <Col className="skills">
           <Card className="bg-black text-white" style={{ textAlign: "left" }}>
             <Card.Body>
               <Card.Title>
