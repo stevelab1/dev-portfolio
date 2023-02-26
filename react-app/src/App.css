@@ -9,11 +9,6 @@
   --bs-code-color: #f1f0f0;
   --bs-link-hover-color: #f1f0f0;
   --bs-link-color: #61dafb;
-  --bs-nav-link-hover-color: #fff;
-  --bs-navbar-hover-color: #fff;
-  --bs-nav-link-active-color: #fff;
-  --bs-navbar-active-color: #fff;
-
 }
 
 a {
@@ -56,7 +51,7 @@ nav, li, ul {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: white;
 }
 
@@ -65,7 +60,7 @@ nav, li, ul {
   text-decoration: none;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
-  font-size: calc(16px + 1vmin);
+  /* font-size: calc(30px + 1vmin); */
 }
 
 .App-link:hover {
@@ -77,9 +72,25 @@ nav, li, ul {
 .nav-link:hover {
   color: #31cf25;
 }
+.navbar-toggler {
+  margin-right: 4vmin;
+  margin-top: 4vmin;
+  color: white;
+  border-color: white;
+}
+
+.avatar {
+  color: white;
+  width: 130px;
+  height: 200px;
+  /* text-align: center;
+  border: 1px double;
+  border-radius: 50%; */
+  /* margin-bottom: 20px; */
+
+}
 
 /* animations: */
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -122,4 +133,61 @@ nav, li, ul {
   50% {
     color: var(--text-color);
   }
+}
+
+/* Project card */
+
+/* ProjectNav */
+.sticky-nav {
+  position: sticky;
+  bottom: 0vh;
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.sticky-nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sticky-nav li {
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 25px;
+  margin-right: 10px;
+
+  font-size: 25px;
+  border: dotted;
+  border-radius: 50px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+active {
+  color: white;
+}
+
+@media screen and (min-width: 992px) {
+.project-title-desktop {
+display: block;
+font-size: 20px;
+}
+.project-id-mobile {
+display: none;
+}
+}
+
+@media screen and (max-width: 992px) {
+.project-title-desktop {
+display: none;
+}
+.project-id-mobile {
+display: block;
+}
 }

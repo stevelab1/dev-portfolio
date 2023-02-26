@@ -38,16 +38,16 @@ const Home = () => {
                   style={{ textDecoration: "none", fontWeight: "bold" }}
                   className="App-link"
                 >
-                  Steve T Lab's Dev Portfolio
+                  Stephen Tallett's Portfolio
                 </code>{" "}
               </Card.Title>
               <Card.Text>
                 <code>
-                  Frontend Developer focusing on
+                Front end web developer with
                   <br />
-                  fast web applications and
+                  mobile, platform and
                   <br />
-                  interfaces to APIs
+                  research experience
                 </code>
               </Card.Text>
             </Card.Body>
@@ -84,14 +84,6 @@ const Home = () => {
                 alt="link to dev-portfolio github repo"
               >
                 /dev-portfolio
-              </Card.Link>
-              <Card.Link
-                href="https://drive.google.com/file/d/1bAdukk8IEQFtxEf2B9W-8SoTe-kixhlz/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                alt="link to CV"
-              >
-                /CV
               </Card.Link>
             </Card.Body>
             <Card.Body>
@@ -135,10 +127,8 @@ const Home = () => {
                       <br />
                       <br />
                       <br />
-                      🔭 Currently working on a Search project
+                      🔭 This portfolio was built using React
                       <br />
-                      <br />
-                      🌱 Currently learning Astro.js
                       <br />
                       <br /> 👯 I’m looking into React Native and Tauri
                     </p>

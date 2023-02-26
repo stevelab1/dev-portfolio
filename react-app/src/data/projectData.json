@@ -1,45 +1,45 @@
 [
     {
       "id": 1,
-      "title": "Project 1",
-      "deployedLink": "https://project1.com",
-      "githubLink": "https://github.com/user/project1",
-      "screenshot": "https://raw.githubusercontent.com/stevelab1/Team-Profile-Generator/main/assets/Screenshot.png"
+      "title": "Weather PickMeUp",
+      "deployedLink": "https://stevelab1.github.io/weather-pickmeup/",
+      "githubLink": "https://github.com/stevelab1/weather-pickmeup",
+      "screenshot": "https://raw.githubusercontent.com/stevelab1/weather-pickmeup/main/assets/img/screenshot.jpg"
     },
     {
       "id": 2,
-      "title": "Project 2",
-      "deployedLink": "https://project2.com",
-      "githubLink": "https://github.com/user/project2",
-      "screenshot": "https://raw.githubusercontent.com/stevelab1/Team-Profile-Generator/main/assets/Screenshot.png"
+      "title": "simple README Generator",
+      "deployedLink": "https://stevelab1.github.io/simple-readme-generator/",
+      "githubLink": "https://github.com/stevelab1/simple-readme-generator",
+      "screenshot": "https://raw.githubusercontent.com/stevelab1/simple-readme-generator/main/assets/screenshot.jpg"
     },
     {
       "id": 3,
-      "title": "Project 3",
-      "deployedLink": "https://project3.com",
-      "githubLink": "https://github.com/user/project3",
-      "screenshot": "https://raw.githubusercontent.com/stevelab1/Team-Profile-Generator/main/assets/Screenshot.png"
+      "title": "Team Profile Generator",
+      "deployedLink": "https://stevelab1.github.io/Team-Profile-Generator",
+      "githubLink": "https://github.com/stevelab1/Team-Profile-Generator",
+      "screenshot": "https://raw.githubusercontent.com/stevelab1/Team-Profile-Generator/main/assets/screenshot.jpg"
     },
     {
       "id": 4,
-      "title": "Project 4",
-      "deployedLink": "https://project4.com",
-      "githubLink": "https://github.com/user/project4",
-      "screenshot": "https://raw.githubusercontent.com/stevelab1/Team-Profile-Generator/main/assets/Screenshot.png"
+      "title": "Code Quiz",
+      "deployedLink": "https://stevelab1.github.io/Code-Quiz/",
+      "githubLink": "https://github.com/stevelab1/Code-Quiz",
+      "screenshot": "https://raw.githubusercontent.com/stevelab1/Code-Quiz/main/assets/Screenshot.png"
     },
     {
       "id": 5,
-      "title": "Project 5",
-      "deployedLink": "https://project5.com",
-      "githubLink": "https://github.com/user/project5",
-      "screenshot": "https://raw.githubusercontent.com/stevelab1/Team-Profile-Generator/main/assets/Screenshot.png"
+      "title": "Weatherdash",
+      "deployedLink": "https://weatherdashlive.netlify.app/",
+      "githubLink": "https://github.com/stevelab1/weatherdash",
+      "screenshot": "https://raw.githubusercontent.com/stevelab1/weatherdash/main/assets/images/Screenshot.png"
     },
     {
       "id": 6,
-      "title": "Project 6",
-      "deployedLink": "https://project6.com",
-      "githubLink": "https://github.com/user/project6",
-      "screenshot": "https://raw.githubusercontent.com/stevelab1/Team-Profile-Generator/main/assets/Screenshot.png"
+      "title": "Password Generator",
+      "deployedLink": "https://stevelab1.github.io/password-generator",
+      "githubLink": "https://github.com/stevelab1/password-generator",
+      "screenshot": "https://raw.githubusercontent.com/stevelab1/password-generator/main/assets/05-javascript-challenge-demo.png"
     }
   ]
   
