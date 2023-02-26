@@ -152,12 +152,6 @@ active {
   }
 }
 
-@media screen and (max-width: 351px) {
-  main {
-    height: auto;
-  }
-}
-
 @media screen and (min-width: 992px) {
   .project-title-desktop {
   display: block;
@@ -174,5 +168,8 @@ active {
   }
   .project-id-mobile {
   display: block;
+  }
+  main {
+    height: auto;
   }
 }
