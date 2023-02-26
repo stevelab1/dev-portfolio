@@ -8,7 +8,7 @@ const Contact = () => {
     return <p className="text-white p-4">Thanks for your message!</p>;
   }
   return (
-    <>
+    <main>
       <br />
       <div className="text-white p-4">
         <p>Find me on: </p>
@@ -81,7 +81,7 @@ const Contact = () => {
           </Form>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 
