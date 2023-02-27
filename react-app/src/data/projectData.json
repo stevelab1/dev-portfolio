@@ -1,45 +1,43 @@
-[
-    {
-      "id": 1,
-      "title": "Weather PickMeUp",
-      "deployedLink": "https://stevelab1.github.io/weather-pickmeup/",
-      "githubLink": "https://github.com/stevelab1/weather-pickmeup",
-      "screenshot": "https://raw.githubusercontent.com/stevelab1/weather-pickmeup/main/assets/img/screenshot.jpg"
-    },
-    {
-      "id": 2,
-      "title": "simple README Generator",
-      "deployedLink": "https://stevelab1.github.io/simple-readme-generator/",
-      "githubLink": "https://github.com/stevelab1/simple-readme-generator",
-      "screenshot": "https://raw.githubusercontent.com/stevelab1/simple-readme-generator/main/assets/screenshot.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Team Profile Generator",
-      "deployedLink": "https://stevelab1.github.io/Team-Profile-Generator",
-      "githubLink": "https://github.com/stevelab1/Team-Profile-Generator",
-      "screenshot": "https://raw.githubusercontent.com/stevelab1/Team-Profile-Generator/main/assets/screenshot.jpg"
-    },
-    {
-      "id": 4,
-      "title": "Code Quiz",
-      "deployedLink": "https://stevelab1.github.io/Code-Quiz/",
-      "githubLink": "https://github.com/stevelab1/Code-Quiz",
-      "screenshot": "https://raw.githubusercontent.com/stevelab1/Code-Quiz/main/assets/Screenshot.png"
-    },
-    {
-      "id": 5,
-      "title": "Weatherdash",
-      "deployedLink": "https://weatherdashlive.netlify.app/",
-      "githubLink": "https://github.com/stevelab1/weatherdash",
-      "screenshot": "https://raw.githubusercontent.com/stevelab1/weatherdash/main/assets/images/Screenshot.png"
-    },
-    {
-      "id": 6,
-      "title": "Password Generator",
-      "deployedLink": "https://stevelab1.github.io/password-generator",
-      "githubLink": "https://github.com/stevelab1/password-generator",
-      "screenshot": "https://raw.githubusercontent.com/stevelab1/password-generator/main/assets/05-javascript-challenge-demo.png"
-    }
-  ]
-  
+[  {    "id": 1,    "title": "Weather PickMeUp",    "deployedLink": "https://stevelab1.github.io/weather-pickmeup/",    "githubLink": "https://github.com/stevelab1/weather-pickmeup",    "screenshot": "https://raw.githubusercontent.com/stevelab1/weather-pickmeup/main/assets/img/screenshot.jpg",    "skills": ["HTML", "CSS", "JavaScript", "API Integration"]
+  },
+  {
+    "id": 2,
+    "title": "simple README Generator",
+    "deployedLink": "https://stevelab1.github.io/simple-readme-generator/",
+    "githubLink": "https://github.com/stevelab1/simple-readme-generator",
+    "screenshot": "https://raw.githubusercontent.com/stevelab1/simple-readme-generator/main/assets/screenshot.jpg",
+    "skills": ["JavaScript", "Node.js"]
+  },
+  {
+    "id": 3,
+    "title": "Team Profile Generator",
+    "deployedLink": "https://stevelab1.github.io/Team-Profile-Generator",
+    "githubLink": "https://github.com/stevelab1/Team-Profile-Generator",
+    "screenshot": "https://raw.githubusercontent.com/stevelab1/Team-Profile-Generator/main/assets/screenshot.jpg",
+    "skills": ["HTML", "CSS", "JavaScript", "Node.js"]
+  },
+  {
+    "id": 4,
+    "title": "Code Quiz",
+    "deployedLink": "https://stevelab1.github.io/Code-Quiz/",
+    "githubLink": "https://github.com/stevelab1/Code-Quiz",
+    "screenshot": "https://raw.githubusercontent.com/stevelab1/Code-Quiz/main/assets/Screenshot.png",
+    "skills": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 5,
+    "title": "Weatherdash",
+    "deployedLink": "https://weatherdashlive.netlify.app/",
+    "githubLink": "https://github.com/stevelab1/weatherdash",
+    "screenshot": "https://raw.githubusercontent.com/stevelab1/weatherdash/main/assets/images/Screenshot.png",
+    "skills": ["HTML", "CSS", "JavaScript", "API Integration"]
+  },
+  {
+    "id": 6,
+    "title": "Password Generator",
+    "deployedLink": "https://stevelab1.github.io/password-generator",
+    "githubLink": "https://github.com/stevelab1/password-generator",
+    "screenshot": "https://raw.githubusercontent.com/stevelab1/password-generator/main/assets/05-javascript-challenge-demo.png",
+    "skills": ["HTML", "CSS", "JavaScript"]
+  }
+]
