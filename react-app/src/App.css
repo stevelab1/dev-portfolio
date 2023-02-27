@@ -1,6 +1,8 @@
 .App {
   background-color: black;
   position: relative;
+  height: 100vh;
+
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -8,6 +10,10 @@
   --bs-code-color: #f1f0f0;
   --bs-link-hover-color: #f1f0f0;
   --bs-link-color: #61dafb;
+}
+
+body {
+  background-color: black;
 }
 
 a {
@@ -27,8 +33,21 @@ nav, li, ul {
   color: transparent;
 }
 
+.github-badge {
+  background-color: transparent !important;
+  border: 1px solid #959da5 !important;
+  color: #959da5 !important;
+  font-size: 10px !important;
+  border-radius: 16px !important;
+}
+
+.no-outline {
+  border: none !important;
+  box-shadow: none !important;
+}
+
 main {
-  height: 100vh;
+  height: 90vh;
 }
 
 .Home {
@@ -168,8 +187,5 @@ active {
   }
   .project-id-mobile {
   display: block;
-  }
-  main {
-    height: auto;
   }
 }

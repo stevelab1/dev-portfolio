@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
-
 import projectData from "../data/projectData.json";
 import Project from "../components/Project.js";
 import ProjectNav from "../components/ProjectNav.js";
-
-//routing
-import { Link, useRouteMatch, Switch, Route } from "react-router-dom";
+import { Link, useRouteMatch, Switch, Route, useLocation } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
+import qs from "qs";
 
 import "../App.css";
 import ProjectDetail from "../components/ProjectDetail";
+import SkillsFilter from "../components/SkillsFilter";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [skills, setSkills] = useState([]);
+  const location = useLocation();
 
   const match = useRouteMatch();
 
@@ -29,27 +29,20 @@ const Projects = () => {
     setSkills(uniqueSkills);
   }, []);
 
-  const handleSkillClick = (skill) => {
-    // Filter the projects based on the clicked skill
-    const filteredProjects = projectData.filter((project) =>
-      project.skills.includes(skill)
-    );
-    setProjects(filteredProjects);
-  };
+  useEffect(() => {
+    // Get the skills from the query string
+    const query = qs.parse(location.search, { ignoreQueryPrefix: true }).skills;
+    if (query) {
+      const filteredProjects = projectData.filter((project) =>
+        project.skills.includes(query)
+      );
+      setProjects(filteredProjects);
+    }
+  }, [location]);
 
   return (
-    <main>
-      <div className="pills-container">
-        {skills.map((skill, index) => (
-          <button
-            key={index}
-            className="pill"
-            onClick={() => handleSkillClick(skill)}
-          >
-            {skill}
-          </button>
-        ))}
-      </div>
+    <main id="projects">
+      <SkillsFilter skills={skills} />
       <Switch>
         <Route exact path={match.path}>
           <Row xs={1} lg={2} xxl={3} className="">

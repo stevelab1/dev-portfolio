@@ -1,10 +1,28 @@
 import React, { useState } from "react";
-import { Card, Row, Col, Button, ListGroup, Offcanvas } from "react-bootstrap";
+import { Card, Row, Col, Button, Offcanvas } from "react-bootstrap";
+import SkillsFilter from "../components/SkillsFilter";
+import UserCard from "../components/GitHubUserCard";
 
 import "../App.css";
-// import logo from "../covercrop.jpg";
 
 const Home = () => {
+  const skills = [
+    "HTML/CSS",
+    "JavaScript",
+    "Node.js",
+    "React",
+    "Next",
+    "Astro",
+    "Tailwind",
+    "Bootstrap",
+    "API Integration",
+    "AI Workflows",
+    "Python",
+    "Django",
+    "REST Framework",
+    "Swift/SwiftUI",
+  ];
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -42,7 +60,7 @@ const Home = () => {
               </Card.Title>
               <Card.Text>
                 <code>
-                Front end web developer with
+                  Front end web developer with
                   <br />
                   mobile, platform and
                   <br />
@@ -50,23 +68,11 @@ const Home = () => {
                 </code>
               </Card.Text>
             </Card.Body>
-            <ListGroup className="list-group-flush bg-dark">
-              <ListGroup.Item className="bg-black text-white border-bottom border-top">
-                HTML, CSS, Javascript
-              </ListGroup.Item>
-              <ListGroup.Item className="bg-black text-white border-bottom">
-                React, Next, Astro
-              </ListGroup.Item>
-              <ListGroup.Item className="bg-black text-white border-bottom">
-                Tailwind, Bootstrap
-              </ListGroup.Item>
-              <ListGroup.Item className="bg-black text-white border-bottom">
-                API Integrations, AI Workflows
-              </ListGroup.Item>
-              <ListGroup.Item className="bg-black text-white border-bottom">
-                Python, Django REST Framework
-              </ListGroup.Item>
-            </ListGroup>
+
+            <Card.Body>
+              <SkillsFilter skills={skills} />
+            </Card.Body>
+
             <Card.Body>
               <Card.Link
                 href="https://github.com/stevelab1"
@@ -104,30 +110,25 @@ const Home = () => {
                 <Offcanvas.Body>
                   <code className="text-white">
                     <p>
-                      ... background in App Publishing, Psychology and Research
+                      Front-End Web Developer with a background in iOS App
+                      Publishing, Psychology and Research
                     </p>
-                    {/* ... add images, lists, etc. */}
-                    <br />
                     <p>
-                      {/* ... include graphics below */}
-                      {/* <img
-                        src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=stevelab1&theme=react&line_height=40"
-                        alt="github languages used"
-                      /> */}
+                      <UserCard username="stevelab1" />
+                      <br />
                       🤔 Favourite tech stack:
                       <br />
                       <span style={{ marginLeft: "1rem" }}>
                         - React with Next or Astro for web
                       </span>
                       <br />
+                      <br />
                       <span style={{ marginLeft: "1rem" }}>
                         - Swift/SwiftUI for iOS and MacOS
                       </span>
                       <br />
                       <br />
-                      <br />
                       🔭 This portfolio was built using React
-                      <br />
                       <br />
                       <br /> 👯 I’m looking into React Native and Tauri
                     </p>
