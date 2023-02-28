@@ -23,6 +23,7 @@ const ProjectDetail = ({ title, githubLink, deployedLink, screenshot }) => {
               target="_blank"
               rel="noopener noreferrer"
               href={deployedLink}
+              aria-label={`Visit the live version of the ${title} project`}
             >
               Live
             </Card.Link>
@@ -53,6 +54,7 @@ const ProjectDetail = ({ title, githubLink, deployedLink, screenshot }) => {
                   <p>
                     <a
                       href={`https://github.com/stevelab1/${titleSlug}/blob/main/LICENSE`}
+                      aria-label={`${title} license badge`}
                     >
                       <img
                         alt={`${title} license badge`}
@@ -61,6 +63,7 @@ const ProjectDetail = ({ title, githubLink, deployedLink, screenshot }) => {
                     </a>
                     <a
                       href={`https://github.com/stevelab1/${titleSlug}/stargazers`}
+                      aria-label={`${title} stars`}
                     >
                       <img
                         alt={`${title} stars badge`}
@@ -102,7 +105,10 @@ const ProjectDetail = ({ title, githubLink, deployedLink, screenshot }) => {
                         alt={`number of open issues for ${title} project on github`}
                       />
                     </a>
-                    <a href={`https://github.com/stevelab1/${titleSlug}/pulls`}>
+                    <a
+                      href={`https://github.com/stevelab1/${titleSlug}/pulls`}
+                      aria-label={`${title} pulls`}
+                    >
                       <img
                         src={`https://img.shields.io/github/issues-pr/stevelab1/${titleSlug}`}
                         alt={`pull requests for ${title}`}

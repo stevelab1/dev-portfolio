@@ -28,7 +28,7 @@ const UserCard = ({ username, clientId, clientSecret }) => {
       rel="noopener noreferrer"
       alt="link to stevelab1 github profile"
     >
-      <Card className="mt-3" style={{ width: "100" }}>
+      <Card className="mt-3">
         <Card.Img variant="top" src={user?.avatar_url} />
         <Card.Body>
           {user ? (
@@ -67,7 +67,7 @@ const UserCard = ({ username, clientId, clientSecret }) => {
         </Card.Body>
         <Card.Body className="d-flex justify-content-center mb-0">
           <img
-            src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=stevelab1&line_height=40"
+            src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=stevelab1&theme=transparent&line_height=40"
             alt="github languages used"
           />
         </Card.Body>

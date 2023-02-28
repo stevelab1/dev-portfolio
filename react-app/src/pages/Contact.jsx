@@ -78,6 +78,7 @@ const Contact = () => {
                 variant="outline-light"
                 type="submit"
                 disabled={state.submitting}
+                aria-label="Submit"
               >
                 Submit
               </Button>

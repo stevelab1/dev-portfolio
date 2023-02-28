@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Card, Row, Col, Button, Offcanvas } from "react-bootstrap";
 import SkillsFilter from "../components/SkillsFilter";
 import UserCard from "../components/GitHubUserCard";
+import GitHubActivityCarousel from "../components/GitHubActivityCarousel";
 
 import "../App.css";
 
@@ -23,6 +24,8 @@ const Home = () => {
     "Swift/SwiftUI",
   ];
 
+  const username = "stevelab1";
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -30,32 +33,17 @@ const Home = () => {
 
   return (
     <main className="Home">
-      <Row xs={1} sm={2} lg={3} className="g-4 p-4">
-        <Col className="pt-4" style={{ width: "12rem", textAlign: "left" }}>
-          <Card className="bg-black avatar border">
-            <Card.Body style={{ fontSize: "6px" }}>
-              _________¶_¶¶¶¶¶¶¶¶¶¶¶ _____¶¶¶¶¶¶¶_________¶
-              ___¶¶¶¶¶¶_____________¶ ___¶_________________¶
-              ____¶________________¶¶ ____¶¶________________¶
-              _____¶________________¶¶ _____¶¶_______¶¶¶____¶¶¶
-              ______¶_____¶¶___¶¶_¶___¶ ______¶_____¶¶_____¶____¶
-              ______¶¶____¶______¶¶¶¶¶¶¶ _______¶____¶¶__¶¶¶_____¶¶
-              ______¶¶¶¶____¶¶¶¶_____¶¶ ______¶¶¶_______________¶¶
-              _______¶¶¶______________¶¶ ________¶_____¶¶¶¶¶¶¶¶¶¶¶
-              _______¶¶_______¶¶¶¶¶ ______¶¶¶¶¶_____¶ ___¶¶¶¶__¶¶¶¶¶¶¶¶
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col className="skills">
-          <Card className="bg-black text-white" style={{ textAlign: "left" }}>
+      <Row xs={1} sm={2} className="g-4 p-4">
+        <Col className="skills card-column" style={{ textAlign: "left" }}>
+          <h1 className="p-2 m-1 text-light">Welcome...</h1>
+          <Card className="bg-black text-white">
             <Card.Body>
               <Card.Title>
                 <code
                   style={{ textDecoration: "none", fontWeight: "bold" }}
                   className="App-link"
                 >
-                  Stephen Tallett's Portfolio
+                  Stevelab's Portfolio
                 </code>{" "}
               </Card.Title>
               <Card.Text>
@@ -92,7 +80,8 @@ const Home = () => {
               </Card.Link>
             </Card.Body>
             <Card.Body>
-              <Button variant="outline-light" onClick={handleShow}>
+              <Button variant="outline-light" onClick={handleShow} aria-label="Moreinfo button"
+>
                 More info
               </Button>
 
@@ -137,6 +126,9 @@ const Home = () => {
               </Offcanvas>
             </Card.Body>
           </Card>
+        </Col>
+        <Col className="card-column">
+          <GitHubActivityCarousel username={username} />
         </Col>
       </Row>
     </main>

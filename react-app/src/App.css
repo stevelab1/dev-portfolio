@@ -2,12 +2,12 @@
   background-color: black;
   position: relative;
   height: 100vh;
-
+  max-width: 2056px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
   /* override bootstrap */
-  --bs-code-color: #f1f0f0;
+  --bs-code-color: #ffffff;
   --bs-link-hover-color: #f1f0f0;
   --bs-link-color: #61dafb;
 }
@@ -41,21 +41,9 @@ nav, li, ul {
   border-radius: 16px !important;
 }
 
-.no-outline {
-  border: none !important;
-  box-shadow: none !important;
-}
-
 main {
-  height: 90vh;
+  height: 100vh;
 }
-
-.Home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 
 .App-link {
   color: #31cf25;
@@ -179,6 +167,10 @@ active {
   .project-id-mobile {
   display: none;
   }
+  .card-column {
+    width: 50%
+  }
+  
 }
 
 @media screen and (max-width: 992px) {
@@ -187,5 +179,8 @@ active {
   }
   .project-id-mobile {
   display: block;
+  }
+  .card-column {
+    width: 100%
   }
 }
