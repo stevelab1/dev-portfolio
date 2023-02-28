@@ -43,7 +43,7 @@ const Home = () => {
                   style={{ textDecoration: "none", fontWeight: "bold" }}
                   className="App-link"
                 >
-                  Stevelab's Portfolio
+                  Stephen Tallett's Portfolio
                 </code>{" "}
               </Card.Title>
               <Card.Text>

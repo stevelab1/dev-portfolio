@@ -14,8 +14,14 @@ const GitHubActivityCarousel = ({ username }) => {
   const [isPlaying, setIsPlaying] = useState(true);
 
   useEffect(() => {
-    const getActivities = async () => {
+    const fetchActivities = async () => {
       try {
+        const cacheKey = `github-activity-${username}`;
+        const cachedData = localStorage.getItem(cacheKey);
+        if (cachedData) {
+          const data = JSON.parse(cachedData);
+          setActivities(data.slice(0, 15));
+        }
         const url = `https://api.github.com/users/${username}/events/public`;
         const response = await fetch(url);
         const data = await response.json();
@@ -23,7 +29,7 @@ const GitHubActivityCarousel = ({ username }) => {
           (activity) => activity.type === "PushEvent"
         );
         const activityPromises = filteredData
-          .slice(0, 3)
+          .slice(0, 15)
           .map(async (activity) => {
             const url = `https://api.github.com/repos/${
               activity.repo.name
@@ -39,14 +45,16 @@ const GitHubActivityCarousel = ({ username }) => {
             (a, b) =>
               new Date(b.activity.created_at) - new Date(a.activity.created_at)
           );
-        setActivities(flattenedData.slice(0, 3));
+        setActivities(flattenedData.slice(0, 15));
+        localStorage.setItem(cacheKey, JSON.stringify(flattenedData));
       } catch (error) {
         console.error(error.message);
       }
     };
 
-    getActivities();
+    fetchActivities();
   }, [username]);
+
 
   useEffect(() => {
     let intervalId = null;
