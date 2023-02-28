@@ -20,12 +20,10 @@ const GitHubActivityCarousel = ({ username }) => {
         const response = await fetch(url);
         const data = await response.json();
         const filteredData = data.filter(
-          (activity) => 
-            activity.type === "PushEvent" && 
-            activity.payload.ref === "refs/heads/main"
+          (activity) => activity.type === "PushEvent"
         );
         const activityPromises = filteredData
-          .slice(0, 6)
+          .slice(0, 3)
           .map(async (activity) => {
             const url = `https://api.github.com/repos/${
               activity.repo.name
@@ -41,12 +39,11 @@ const GitHubActivityCarousel = ({ username }) => {
             (a, b) =>
               new Date(b.activity.created_at) - new Date(a.activity.created_at)
           );
-        setActivities(flattenedData.slice(0, 6));
+        setActivities(flattenedData.slice(0, 3));
       } catch (error) {
         console.error(error.message);
       }
     };
-    
 
     getActivities();
   }, [username]);
